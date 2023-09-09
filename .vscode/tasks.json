@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-all",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "./*.cpp",
+                "./headers/*.cpp",
+                "./functions/*.cpp",
+                "-o",
+                "scheduling.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
